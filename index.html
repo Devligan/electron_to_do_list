@@ -1,0 +1,35 @@
+<!--Used Chat GPT to write this-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why You Lazy</title>
+    <link rel="stylesheet" href="pain.css">
+</head>
+<body>
+<script src="pain.js"></script>
+<div class="container">
+    <h1>To-Do List</h1>
+    <p align="center">Must save pain.json within the folder that this application is running in</p>
+    <div id="todo-form">
+        <input type="text" id="title" placeholder="Title">
+        <input type="date" id="dueDate">
+        <textarea id="description" placeholder="Description"></textarea>
+        <input type="text" id="category" placeholder="Category (optional)">
+        <button onclick="addItem()">Add Item</button>
+        <div id="category-filter">
+            <label for="category-select">Filter by Category:</label>
+            <select id="category-select" onchange="filter()">
+                <option value="">All Categories</option>
+                <!-- Options will be dynamically populated from the todoList -->
+            </select>
+        </div>
+    </div>
+    <div id="todo-list">
+        <!-- To-do items will be displayed here -->
+    </div>
+    <div id="checked-off-count"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/*Used ChatGPT to write this*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+h1 {
+    text-align: center;
+}
+
+#todo-form input[type="text"],
+#todo-form input[type="date"],
+#todo-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#todo-form button {
+    display: block;
+    margin: 10px auto;
+}
+
+.todo-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+.checked-off {
+    text-decoration: line-through;
+}
